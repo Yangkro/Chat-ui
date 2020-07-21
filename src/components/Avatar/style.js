@@ -1,14 +1,16 @@
 import styled,{css} from 'styled-components'
 import theme from 'theme'
+import {circle} from "utils/mixins.js"
 // 因为在线状态部分的伪元素代码类似，因此可以使用CSS函数来实现代码复用，跟SASS/LESS中的Mixins类似
 const circleMixinFunc = (color, size = '8px') => css`
     content: "";
     display: block;
     position: absolute;
-    width: ${size};
+    ${'' /* width: ${size};
     height: ${size};
     border-radius: 50%;
-    background-color: ${color};
+    background-color: ${color}; */}
+    ${circle(color, size)}
 `
 /**
  * 定义四个常量
