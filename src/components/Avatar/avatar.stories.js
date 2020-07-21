@@ -24,7 +24,6 @@ export const Sizes = () => {
     </div>   
     )
 }
-
 export const WithStatus = () => {
     return (
         <div className = 'row-elements'>
