@@ -6,6 +6,7 @@ export const circle = (color, size = '8px') => css`
     border-radius: 50%;
     background-color: ${color};
 `
+// 高亮显示条
 export const activeBar = ({ barWidth= "8px", shadowWidth= "20px"} = {}) => css`
     position: relative;
     &::before, &::after {
@@ -30,4 +31,11 @@ export const activeBar = ({ barWidth= "8px", shadowWidth= "20px"} = {}) => css`
         );
         opacity: 0.6;
     }
+`
+// card函数
+export const card = (radius = "6px", padding = "20px 30px") => css`
+    padding: ${ padding };
+    background: ${({ theme }) => theme.background};
+    box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, 0. 04);
+    border-radius: ${radius};
 `

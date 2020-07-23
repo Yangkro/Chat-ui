@@ -15,7 +15,7 @@ function <%= name %>({
     )
 }
 <%= name %>.propTypes = {
-  children:PropTypes.any
+  children:PropTypes.any,
 }
 
 export default <%= name %>

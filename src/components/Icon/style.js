@@ -9,7 +9,7 @@ const StyledIcon = styled.div`
   svg,
   svg * {
     ${({ color }) => (color ? `fill: ${color}` : "")};
-    ${(opacity) =>(opacity? `opacity: ${opacity}`: "")};
+    ${({ opacity }) =>(opacity? `opacity: ${opacity}`: "")};
   }
 `
 export default StyledIcon
