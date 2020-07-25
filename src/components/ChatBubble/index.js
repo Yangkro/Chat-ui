@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import StyledChatBubble, { Bubble, BubbleTip, Time } from './style'
+import StyledChatBubble, { Bubble, BubbleTip, Time, MessageText } from './style'
 import {ReactComponent as BubbleTipIcon} from 'assets/icon/bubbleTip.svg';
 function ChatBubble({
   children,
@@ -10,7 +10,8 @@ function ChatBubble({
     return (
       <StyledChatBubble type={type} time={time} {...rest}>
         <Bubble>
-          <BubbleTip icon={BubbleTipIcon} width={40} height={28} color="white"/>
+          <BubbleTip icon={BubbleTipIcon} width={40} height={28} color="white" />
+          <MessageText>{children}</MessageText>
         </Bubble>
         <Time>{time}</Time>
         </StyledChatBubble>
