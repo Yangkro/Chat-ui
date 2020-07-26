@@ -14,7 +14,8 @@ function Button({
         shape={shape}
         size={size}
         bgColor={bgColor}
-        {...rest}>
+        {...rest}
+      >
         {children}
         </StyledButton>
     )

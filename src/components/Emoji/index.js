@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import StyledEmoji  from './style'
 function Emoji({
   label,
-
     children,
     ...rest }) {
     return (

@@ -1,5 +1,6 @@
 import styled,{css} from 'styled-components'
 import CaretDown from 'assets/icon/caret_down.svg';
+import CaretDown2 from 'assets/icon/caretDown2.svg';
 // 在Chrome和firefox下分别使用 --webkit-appearance和--moz-apppearance来隐藏默认图标，但是包含了Autoprefixer库会自动加上前缀，所以可以直接使用
 const StyledSelect = styled.select`
   appearance: none;
@@ -10,11 +11,18 @@ const StyledSelect = styled.select`
   border: none;
   padding-right: 14px;
   font-size: ${({ theme }) => theme.normal};
-  color: ${({theme}) => theme.grayDark};
-
+  color: ${({ theme }) => theme.grayDark};
+  
+  ${({type}) => type && typeVariants[type]};
   /* IE 下设置伪元素来隐藏默认图标 */
   ::-ms-expand{
     display: none
   }
 `
+const typeVariants = {
+  form: css`
+  background-image: url(${CaretDown2});
+  `,
+}
+  
 export default StyledSelect

@@ -15,5 +15,14 @@ export const WithAffix = () => {
     return (
         <Input prefix={<Icon icon={ClipIcon} color="#ccc" />} suffix={<Icon icon={SmileIcon} color="#ccc" />}/>  
     )
-    
+}
+export const InputTextWithLabel = () => {
+    return (
+        <Input.Text label="昵称" />
+    )
+}
+export const InputTextWithoutLabel = () => {
+    return (
+        <Input.Text />
+    )
 }

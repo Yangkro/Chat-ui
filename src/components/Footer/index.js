@@ -51,15 +51,16 @@ function Footer({
         </StyledFooter>
     )
 }
+/* eslint-disable jsx-a11y/accessible-emoji */
 function PopoverContent(props) {
   return (
     <StyledPopoverContent>
-      <Emoji label="smile"></Emoji>
-      <Emoji label="smile"></Emoji>
-      <Emoji label="smile"></Emoji>
-      <Emoji label="smile"></Emoji>
-      <Emoji label="smile"></Emoji>
-      <Emoji label="smile"></Emoji>
+      <Emoji label="smile">🙂</Emoji>
+      <Emoji label="smileWithTears">🤣</Emoji>
+      <Emoji label="rocket">🚀</Emoji>
+      <Emoji label="eyesWithStars">🤩</Emoji>
+      <Emoji label="eyes">👀</Emoji>
+      <Emoji label="car">🚛</Emoji>
       <Icon icon={OptionsIcon} style={{marginLeft: '24px'}} />
     </StyledPopoverContent>
   )

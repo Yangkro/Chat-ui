@@ -3,6 +3,7 @@ import Icon from ".";
 import { ReactComponent as SmileIcon } from 'assets/icon/smile.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots, faFolder, faSadCry, faSchool } from '@fortawesome/free-solid-svg-icons';
+import { faWeixin } from "@fortawesome/free-brands-svg-icons";
 export default {
     title: "UI 组件/Icon",
     component: Icon,
@@ -27,4 +28,15 @@ export const FontAwesomeSizes = () => {
     < FontAwesomeIcon icon={faSadCry} style={{ fontSize: 70 }} opacity={0.3} />
     < FontAwesomeIcon icon={faSchool} style={{fontSize: 80}}/> 
     </div>
+}
+export const SocialIcons = () => {
+    return (
+        <div>
+          <Icon.Social
+            icon={faWeixin}
+            bgColor="#F06767"
+            href="http://www.weibo.com"
+          />
+        </div>
+    )
 }

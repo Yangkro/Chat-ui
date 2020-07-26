@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import StyledIcon  from './style'
+import SocialIcon from './SocialIcon'
 function Icon({
   icon: IconComponent,
   height = 24,
@@ -15,6 +16,7 @@ function Icon({
         </StyledIcon>
     )
 }
+Icon.Social = SocialIcon
 Icon.propTypes = {
   icon: PropTypes.element,
   height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

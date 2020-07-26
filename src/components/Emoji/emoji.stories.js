@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
 import Emoji from ".";
 export default {
@@ -6,7 +7,8 @@ export default {
 };
 export const Default = () => (
     <div>
-        <Emoji label="smile"></Emoji>
-        <Emoji label="hello"></Emoji>
+        <Emoji label="smile">🙂</Emoji>
+        <Emoji label="hello">😀</Emoji>
+        <Emoji label="car">🚗</Emoji>
     </div>
    )
