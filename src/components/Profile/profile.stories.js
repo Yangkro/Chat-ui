@@ -4,4 +4,4 @@ export default {
     title: "Profile",
     component: Profile,
 };
-export const Default = () => <Profile />
+export const Default = () => <Profile status="online"/>

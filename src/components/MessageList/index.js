@@ -10,13 +10,20 @@ import {ReactComponent as Plus} from 'assets/icon/plus.svg';
 import Input from 'components/Input'
 import MessageCard from 'components/MessageCard'
 import face1 from "assets/images/face-male-1.jpg"
+import FilterList from 'components/FilterList';
+/**
+      <FilterList opyions={["最新消息优先", "在线好友优先"]} actionLabel = "创建会话" >
+      </FilterList>
+        <Input.Search />
+        <ChatFilter />
+ */
 function MessageList({
     children,
     ...rest }) {
     return (
       <StyledMessageList{...rest}>
-        <Input.Search />
-        <ChatFilter />
+      <Input.Search />
+      <ChatFilter />
         <ChatList>
           {[1, 2, 3, 4, 5, 6].map((_, index) => (
             <MessageCard 

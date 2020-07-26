@@ -18,7 +18,7 @@ function Icon({
 }
 Icon.Social = SocialIcon
 Icon.propTypes = {
-  icon: PropTypes.element,
+  icon: PropTypes.any,
   height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   opacity: PropTypes.number,
