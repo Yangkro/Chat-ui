@@ -25,9 +25,9 @@ function Avatar({
 // proTypes定义组件规范
 Avatar.propTypes = {
     src: PropTypes.string.isRequired,
-    size: PropTypes.string.isRequired,
+    size: PropTypes.string,
     status: PropTypes.oneOf(['online', 'offline']),
-    statusIconSize: PropTypes.string.isRequired
+    statusIconSize: PropTypes.string,
 }
 
 export default Avatar

@@ -10,25 +10,29 @@ import face1 from "assets/images/face-male-1.jpg"
 import face2 from "assets/images/face-male-2.jpg"
 import face3 from "assets/images/face-male-3.jpg"
 import face4 from "assets/images/face-male-4.jpg"
+import { useHistory } from 'react-router-dom'
+import blockedData from "data/blocked"
 function BlockList({
     children,
-    ...rest }) {
+  ...rest }) {
+  const history = useHistory();
     return (
         <StyledBlockList{...rest}>
         <SettingsMenu>
           <Icon
             icon={ArrowMenuLeft}
             css={`cursor: pointer`}
+            onClick = {() => history.goBack()}
           />
           <Text size="xxlarge">已屏蔽的好友</Text>
         </SettingsMenu>
         <FriendList>
-          {new Array(8).fill(0).map((_, i) => {
+          {blockedData.map((user, i) => {
             return (
-              <CloseableAvatar key={i}>
-                <BlockedAvatar size="105px" src={face2} />
+              <CloseableAvatar key={user.id}>
+                <BlockedAvatar size="105px" src={user.avatar} />
                 <CloseIcon width={46} height={51} icon={closeCircle} />
-                <BlockedName>李明浩</BlockedName>
+                <BlockedName>{user.name}</BlockedName>
               </CloseableAvatar>
             )
           })}

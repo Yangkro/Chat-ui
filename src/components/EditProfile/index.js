@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import face3 from "assets/images/face-male-3.jpg"
 import "styled-components/macro"
-import Input from 'components/Input'
 import InputText from 'components/Input/InputText'
 import Radio from 'components/Radio'
 import LabelContainer from 'components/LabelContainer'

@@ -7,12 +7,26 @@ import Icon from 'components/Icon'
 import Seperator from 'components/Seperator'
 import { ReactComponent as ArrowMenuRight } from 'assets/icon/arrowMenuRight.svg';
 import "styled-components/macro"
+import { Link } from 'react-router-dom'
+import { useSpring, animated } from 'react-spring'
 // 具体页面
 function Settings({
     children,
-    ...rest }) {
+  ...rest }) {
+    const animeProps = useSpring({
+      opacity: 1,
+      transform: "translate3d(0px, 0px, 0px)",
+      from: { opacity: 0, transform: "translate3d(100px, 0px, 0px)"},
+      config: {
+        tension: 140,
+      },
+      delay: 300,
+    })
     return (
-        <StyledSettings{...rest}>
+      <StyledSettings{...rest}>
+        <animated.div style={animeProps}>
+
+        
         <SettingsGroup groupName="隐私设置" >
           <SettingsItem label="添加好友时需要验证" />
           <SettingsItem label="推荐通讯录好友" description="上传通讯录只用来匹配好友列表，本应用不会记录和发送任何信息给其他机构或单位" />
@@ -23,8 +37,17 @@ function Settings({
           <SettingsItem label="语音和视频通话提醒" />
           <SettingsItem label="显示通知详情" />
           <SettingsItem label="声音" />
-          <SettingsItem label="查看已静音好友列表" type="menu" />
-        </SettingsGroup>
+
+          <Link to={'/settings/blocked'}
+            css={`
+            text-decoration: none;
+            color: inherit;
+            `}
+          >
+            <SettingsItem label="查看已静音好友列表" type="menu" />
+          </Link>
+          </SettingsGroup>
+          </animated.div>
         </StyledSettings>
     )
 }

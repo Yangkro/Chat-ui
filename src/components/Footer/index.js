@@ -13,6 +13,8 @@ import Emoji from 'components/Emoji'
 import Popover from 'components/Popover'
 import { useTheme } from 'styled-components'
 function Footer({
+  animeProps,
+  style,
     children,
   ...rest }) {
   // 表情颜色切换
@@ -20,7 +22,7 @@ function Footer({
   const theme = useTheme();
 
     return (
-        <StyledFooter{...rest}>
+        <StyledFooter{...rest} style={{...style, ...animeProps}}>
         <Input 
           placeholder="请输入想和对方说的话"
           prefix={<Icon icon={ClipIcon} />}

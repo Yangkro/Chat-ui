@@ -3,16 +3,24 @@ import PropTypes from 'prop-types'
 import StyledFileList, { Files }  from './style'
 import FilterList from 'components/FilterList'
 import FileCard from 'components/FileCard'
+import useStaggeredList from 'hooks/useStaggeredList'
+import { animated } from 'react-spring'
+// 导入数据文件
+import fileData from 'data/files'
 function FileList({
     children,
-    ...rest }) {
+  ...rest }) {
+  const trailAnimes =useStaggeredList(10)
     return (
         <StyledFileList{...rest}>
         <FilterList options={["最新文件优先"], ["按文件名排序"]} >
           <Files>
-            {new Array(10).fill(0).map((_, i) => {
+            {fileData.map((file, i) => {
               return (
-                <FileCard key={i} />
+                <animated.div key={file.id} style={trailAnimes[i]}>
+                  <FileCard key={file.id} file={file}/>
+                </animated.div>
+                
               )
             }) }
           </Files>
