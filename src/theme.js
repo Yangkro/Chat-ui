@@ -4,6 +4,7 @@ export default {
   gray: "rgba(24, 28, 47, 0.2)",
   // 红点红色
   red: "#F34848",
+  red2: "rgba(236, 90, 81, 0.5)",
   // 定义侧导航的背景
   darkPurple: "#292F4C",
   // 搜索框背景色
@@ -13,8 +14,10 @@ export default {
   gray5: "#DBDBDB",
   // 搜索框文字颜色
   grayDark: "#181C2F",
+  grayDark2: "rgba(33, 33, 33, 0.58)",
   // 定义背景色
   background: "white",
+  gredianGray: "linear-gradient(119.19deg, #FFFFFF 0%, #F8F8F8 65.34%, #FFFFFF 100%)",
   // 定义回复状态的颜色
   inactiveColor: "rgba(41, 47, 76, 0.3)",
   inactiveColorDark: "white",

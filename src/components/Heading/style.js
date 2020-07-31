@@ -1,4 +1,3 @@
-import styled,{css} from 'styled-components'
-import theme from 'theme'
+import styled from 'styled-components'
 const StyledHeading = styled.div``
 export default StyledHeading

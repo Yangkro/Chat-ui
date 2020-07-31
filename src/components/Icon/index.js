@@ -18,10 +18,11 @@ function Icon({
 }
 Icon.Social = SocialIcon
 Icon.propTypes = {
-  icon: PropTypes.element,
+  icon: PropTypes.oneOfType(["PropTypes.element", "PropTypes.elementType"]),
   height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   opacity: PropTypes.number,
+  color: PropTypes.string,
 }
 
 export default Icon

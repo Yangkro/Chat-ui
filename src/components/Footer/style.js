@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { animated } from 'react-spring'
 // 定义一个容器组件
 const IconContainer = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ const StyledPopoverContent = styled.div`
     font-size: 16px;
   }
 `
-const StyledFooter = styled.footer`
+const StyledFooter = styled(animated.footer)`
   padding: 12px 30px;
   width: 100%;
 `

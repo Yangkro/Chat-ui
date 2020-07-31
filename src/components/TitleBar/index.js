@@ -9,13 +9,20 @@ import Icon from 'components/Icon'
 import { ReactComponent as Call } from 'assets/icon/call.svg';
 import { ReactComponent as Camera } from 'assets/icon/camera.svg';
 import { ReactComponent as Options } from 'assets/icon/options.svg';
+import Dropdown from 'components/Dropdown'
+import { DropdownItem } from 'components/Dropdown/style'
+import Seperator from 'components/Seperator'
 // 此篇代码有bug，无法设置透明度
 function TitleBar({
+  animeProps,
+  style,
+  onAvatarClick,
+  onVideoClick,
     children,
     ...rest }) {
     return (
-        <StyledTitleBar{...rest}>
-        <Avatar status="offline" src={face1} />
+        <StyledTitleBar{...rest} style={{...style, ...animeProps}}>
+        <Avatar status="offline" src={face1} onClick={onAvatarClick} />
         <Title>
           <Paragraph size="large">Yangkro</Paragraph>
           <Paragraph type="secondary">
@@ -25,8 +32,24 @@ function TitleBar({
         </Title>
         <Actions>
           <Icon opacity={0.3} icon={Call}/>
-          <Icon icon={Camera} opacity={0.3}/>
-          <Icon opacity={0.3} icon={Options} />
+          <Icon icon={Camera} opacity={0.3} onClick={onVideoClick}/>
+          <Dropdown content={
+            <>
+              <DropdownItem>
+                <Paragraph>个人资料</Paragraph>
+              </DropdownItem>
+              <DropdownItem>
+                <Paragraph>关闭会话</Paragraph>
+              </DropdownItem>
+              <Seperator />
+              <DropdownItem>
+                <Paragraph type="danger">屏蔽此人</Paragraph>
+              </DropdownItem>
+            </>
+          }>
+            <Icon opacity={0.3} icon={Options} />
+          </Dropdown>
+          
         </Actions>
         </StyledTitleBar>
     )

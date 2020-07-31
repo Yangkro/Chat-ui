@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import arrowRight from 'assets/icon/arrowRight.svg';
 import Icon from 'components/Icon';
 const StyledProfile = styled.div`

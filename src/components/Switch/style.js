@@ -24,6 +24,7 @@ const Slider = styled.span`
     left: 1px;
     background-color: white;
     transition: 0.4s;
+    cursor: pointer;
   }
 `
 //实际控制开关的组件

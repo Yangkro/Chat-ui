@@ -1,5 +1,4 @@
-import styled,{css} from 'styled-components'
-import theme from 'theme'
+import styled from 'styled-components'
 // 输入框
 const StyledInput = styled.input`
   width: 100%;
