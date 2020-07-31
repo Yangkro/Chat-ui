@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import Text from 'components/Text'
 // 标题 基本信息
 const GroupTitle = styled(Text).attrs({ size: "large" })`

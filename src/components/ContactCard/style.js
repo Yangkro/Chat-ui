@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import Paragraph from 'components/Paragraph'
 import { card } from 'utils/mixins'
 import StyledAvatar from 'components/Avatar/style'

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import StyledTitleBar, { Title, Actions } from './style'
-import face1 from "assets/images/face-male-1.jpg"
+import face4 from "assets/images/face-female-2.jpg";
 import Avatar from 'components/Avatar'
 import Paragraph from 'components/Paragraph'
 import Text from 'components/Text'
@@ -22,9 +22,9 @@ function TitleBar({
     ...rest }) {
     return (
         <StyledTitleBar{...rest} style={{...style, ...animeProps}}>
-        <Avatar status="offline" src={face1} onClick={onAvatarClick} />
+        <Avatar status="offline" src={face4} onClick={onAvatarClick} />
         <Title>
-          <Paragraph size="large">Yangkro</Paragraph>
+          <Paragraph size="large">郭文菲</Paragraph>
           <Paragraph type="secondary">
             <Text>离线</Text>
             <Text>·最后阅读：3小时前</Text>

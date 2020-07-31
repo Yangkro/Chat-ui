@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompressAlt, faMicrophone, faPhoneSlash, faVolumeMute, faVideo } from '@fortawesome/free-solid-svg-icons'
 // 背景图片
 import videoCaller from "assets/images/video-caller.jpg"
-import face4 from "assets/images/face-male-4.jpg"
+import face4 from "assets/images/face-female-2.jpg";
 import Avatar from 'components/Avatar'
 import Paragraph from 'components/Paragraph'
 import "styled-components/macro"
@@ -20,7 +20,7 @@ function VideoCall({
     return (
       <VideoCallAlert>
         <Avatar src={face4} css={`grid-area: avatar;margin-right: 10px;`} />
-        <Paragraph size="medium" css={`grid-area: info;`}>正在跟 李明浩 进行视频通话</Paragraph>
+        <Paragraph size="medium" css={`grid-area: info;`}>正在跟 郭文菲 进行视频通话</Paragraph>
         <Paragraph type="secondary"
           css={`
           grid-area: action;
@@ -57,7 +57,6 @@ function VideoCall({
             <FontAwesomeIcon icon={faVolumeMute} />
           </Action>
         </Actions>
-
         <Self src={face4} size="140px" />
         </StyledVideoCall>
     )

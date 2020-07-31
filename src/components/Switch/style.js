@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 // 滑动按钮
 const Slider = styled.span`
   /* 滑动槽 */

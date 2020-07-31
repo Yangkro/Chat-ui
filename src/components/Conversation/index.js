@@ -52,7 +52,11 @@ function Conversation({
           <ChatBubble time="昨天 下午14:47">
             <VoiceMessage time="0:20"></VoiceMessage>
           </ChatBubble>
-          <MyChatBubble time="昨天 下午14:45">行，等咱回去了越麻将，一亿飘十亿的那种<Emoji label="oneEyeClosed">😉😉</Emoji></MyChatBubble>
+          <MyChatBubble time="昨天 下午14:49">
+          <VoiceMessage time="0:12" type="mine"></VoiceMessage>
+          </MyChatBubble>
+          <ChatBubble time="昨天 下午14:50">明天我还要去上课，如果有空的话，我在和你联系吧</ChatBubble>
+          <MyChatBubble time="昨天 下午14:55">行，等咱回去了越麻将，一亿飘十亿的那种<Emoji label="oneEyeClosed">😉😉</Emoji></MyChatBubble>
         </Conversations>
         <Footer animeProps={ftAnimeProps}/>
         </StyledConversation>

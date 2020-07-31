@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import StyledText from 'components/Text/style'
 import Avatar from 'components/Avatar'
 import Text from 'components/Text'

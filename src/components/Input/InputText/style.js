@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 const InputUnderline = styled.input`
   border: none;
   border-bottom: 1px solid ${({ theme }) => theme.gray4};
