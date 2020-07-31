@@ -13,7 +13,7 @@ function FileList({
   const trailAnimes =useStaggeredList(10)
     return (
         <StyledFileList{...rest}>
-        <FilterList options={["最新文件优先"], ["按文件名排序"]} >
+        <FilterList options={["最新文件优先", "按文件名排序"]} >
           <Files>
             {fileData.map((file, i) => {
               return (

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import StyledMessageCard from 'components/MessageCard/style'
 // 定义消息卡片列表
 const ChatList = styled.div`

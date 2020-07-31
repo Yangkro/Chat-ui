@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import ChatBubble from 'components/ChatBubble'
 import { animated } from 'react-spring'
 const Conversations = styled(animated.div)`

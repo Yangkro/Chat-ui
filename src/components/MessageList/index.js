@@ -9,9 +9,8 @@ import StyledMessageList, { ChatList }  from './style'
 // import {ReactComponent as Plus} from 'assets/icon/plus.svg';
 // import Input from 'components/Input'
 import MessageCard from 'components/MessageCard'
-import face1 from "assets/images/face-male-1.jpg"
 import FilterList from 'components/FilterList';
-import {useTrail, animated} from "react-spring"
+import { animated} from "react-spring"
 import useStaggeredList from 'hooks/useStaggeredList'
 // 导入消息列表数据
 import messageData from "data/messages"
@@ -24,7 +23,7 @@ import messageData from "data/messages"
 function MessageList({
     children,
   ...rest }) {
-  // 通过useTrail来设置动画
+  // 通过Trail来设置动画
   const trailAnimes = useStaggeredList(6)
     return (
       <StyledMessageList{...rest}>
