@@ -26,7 +26,7 @@ const StyledButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   ${({ shape }) => shapeVariants[shape]};
   ${({ type }) => typeVariants[type]};
   ${({ bgColor }) => `background-color: ${bgColor}`};

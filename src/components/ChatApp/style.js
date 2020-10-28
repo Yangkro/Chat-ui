@@ -14,7 +14,6 @@ const Sidebar = styled.aside`
   height: 100vh;
   flex: 1;
   background: ${({ theme }) => theme.gredianGray};
-  
   position: relative;
   z-index: 50;
   > div {

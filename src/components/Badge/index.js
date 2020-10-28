@@ -7,7 +7,8 @@ function Badge({
   show = false,
   count = 0,
   showZreo = false,
-    ...rest }) {
+  ...rest })
+{
     return (
       <StyledBadge
         variant={children ? "dot" : "default"}

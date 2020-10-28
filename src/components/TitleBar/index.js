@@ -12,7 +12,6 @@ import { ReactComponent as Options } from 'assets/icon/options.svg';
 import Dropdown from 'components/Dropdown'
 import { DropdownItem } from 'components/Dropdown/style'
 import Seperator from 'components/Seperator'
-// 此篇代码有bug，无法设置透明度
 function TitleBar({
   animeProps,
   style,

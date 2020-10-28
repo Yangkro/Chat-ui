@@ -1,5 +1,4 @@
 import styled,{css} from 'styled-components'
-import theme from 'theme'
 // 定义type的变体
 const typeVariants = {
   primary: css`

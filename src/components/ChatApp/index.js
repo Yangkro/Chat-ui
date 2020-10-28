@@ -31,7 +31,7 @@ function ChatApp({
     leave: { opacity: 0, transform: "translate3d(-100px, 0, 1)" },
   })
     return (
-        <StyledChatApp{...rest}>
+        <StyledChatApp {...rest}>
         <Nav>
           <NavBar />
         </Nav>

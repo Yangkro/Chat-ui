@@ -4,7 +4,6 @@ const StyledIcon = styled.div`
   align-items: center;
   justify-content: center;
 
-
   svg,
   svg * {
     ${({ color }) => (color ? `fill: ${color}` : "")};

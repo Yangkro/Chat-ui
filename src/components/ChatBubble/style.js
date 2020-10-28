@@ -1,5 +1,4 @@
 import styled,{css} from 'styled-components'
-import theme from 'theme'
 import Paragraph from 'components/Paragraph'
 import Icon from 'components/Icon'
 import Text from 'components/Text'
@@ -60,5 +59,6 @@ const StyledChatBubble = styled.div`
   /* 根据type加载变体 */
   ${({type}) => type && typeVariants[type]};
 `
+
 export default StyledChatBubble
 export {Time, Bubble, BubbleTip, MessageText}

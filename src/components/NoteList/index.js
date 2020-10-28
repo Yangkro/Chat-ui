@@ -22,7 +22,6 @@ function NoteList({
                 <animated.div key={note.id} style={trailAnimes[i]}>
                   <NoteCard key={note.id} note={note}/>
                 </animated.div>
-                
               )
             })}
           </Notes>
